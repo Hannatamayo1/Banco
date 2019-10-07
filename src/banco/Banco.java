@@ -1,5 +1,6 @@
 package banco;
 
+import static java.time.Clock.system;
 import java.util.Date;
 
 public class Banco {
@@ -17,7 +18,21 @@ public class Banco {
         this.nombreDelDueno = nombreDelDueno;
         this.tieneSucursales = tieneSucursales;
     }
-
+    public void agregarCajas (){
+        this.numeroDeCajas +=1;
+        }
+    
+    public void agregarCajas(int cajas) {
+        if (cajas < this.numeroDeCajas) {
+            System.out.println("Tienes mas cajas de las que se agregaran");
+        }
+        else {
+            System.out.println("Se agregaron nuevas cajas"); 
+            numeroDeCajas = cajas;
+        }
+    }
+    
+    
     public int getNumeroDeCajas() {
         return numeroDeCajas;
     }
