@@ -1,6 +1,5 @@
 package banco;
 
-import static java.time.Clock.system;
 import java.util.Date;
 
 public class Banco {
