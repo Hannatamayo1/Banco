@@ -19,11 +19,10 @@ public class CajaDeAhorro extends Banco {
     public void contratarTrabajadores(int nuevoTrabajador){
           this.cantidadDeTrabajadores = nuevoTrabajador;
           
-    
-    public void contratarTrabajadores(int nuevoTrabajador, tengaDoctorado){
-        this.cantidadDeTrabajadores = nuevoTrabajador "de" + doctorado ;
-    }      
-      
+
+    public void contratarTrabajadores(){           
+        this.cantidadDeTrabajadores = cantidadDeTrabajadores+2; 
+    }
     
     public boolean isSonConfiables() {
         return sonConfiables;
@@ -53,7 +52,7 @@ public class CajaDeAhorro extends Banco {
          }
 
 
-                    }
+                }
     
     
 

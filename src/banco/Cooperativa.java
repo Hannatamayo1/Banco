@@ -15,9 +15,16 @@ public class Cooperativa extends Banco {
         this.tasaAltaDeInteres = tasaAltaDeInteres;
         this.nombreCliente = nombreCliente;
     }
-
-   
     
+    public void aumentarTasaDeInteres(){
+        this.tasaAltaDeInteres = true;
+        
+     }
+    public void cambiarNombre (String NombreCliente){
+        String cambiarNombre = null;
+        this.nombreCliente = cambiarNombre;
+    
+    }
     
     public int getNumeroDeSocios(){
          return numeroDeSocios;
@@ -25,6 +32,7 @@ public class Cooperativa extends Banco {
     
     public void setNumeroDeSocios(int numeroDeSocios){
         this.numeroDeSocios = numeroDeSocios;
+        
         
         
     }
